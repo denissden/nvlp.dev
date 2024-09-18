@@ -8,7 +8,7 @@ export default function Home() {
         <Image
           className="dark:invert"
           src="/envelope.png"
-          alt="Next.js logo"
+          alt="Envelope.js logo"
           width={280}
           height={38}
           priority
