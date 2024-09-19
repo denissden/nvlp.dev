@@ -35,7 +35,7 @@ if (err != nil) {
         </code>
         <textarea
           className="list-inside list-decimal text-sm text-center sm:text-left bg-background text-[#186818] dark:text-[#6c6] font-[family-name:var(--font-geist-mono)]"
-          name="envelope" id="envelope" cols="80" rows="10"
+          name="envelope" id="envelope" cols={80} rows={10}
           value={envelope}
           onChange={(e) => {
             setEnvelope(e.target.value);
@@ -47,7 +47,7 @@ if (err != nil) {
         </code>
         <textarea
           className="list-inside list-decimal text-sm text-center sm:text-left bg-background  text-[#186818] dark:text-[#6c6] font-[family-name:var(--font-geist-mono)]"
-          name="envelope" id="envelope" cols="80" rows="12" value={js} readOnly={true}></textarea>
+          name="envelope" id="envelope" cols={80} rows={12} value={js} readOnly={true}></textarea>
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
             className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
