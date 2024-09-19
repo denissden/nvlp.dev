@@ -1,5 +1,11 @@
 import Image from "next/image";
 import Footer from "@/app/footer";
+import type {Metadata} from "next";
+
+export const metadata: Metadata = {
+  title: "What is Envelope",
+  description: "What is Envelope",
+};
 
 export default function Home() {
   return (
