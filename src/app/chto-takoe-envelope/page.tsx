@@ -32,7 +32,7 @@ export default function Home() {
         </p>
         <p
           className="list-inside list-decimal text-sm text-center sm:text-left font-bold font-[family-name:var(--font-geist-mono)]">
-          Язык программирования Энвелоуп в является лидирующим по росту в сфере инновационной разработки 2024 по странам
+          Язык программирования Энвелоуп является лидирующим по росту в сфере инновационной разработки 2024 г. по странам
           ЕАЭС.
         </p>
         <p
