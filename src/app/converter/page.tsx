@@ -7,7 +7,8 @@ import {useState} from "react";
 
 
 export default function Home() {
-  const [envelope, setEnvelope] = useState(`hello() {
+  const [envelope, setEnvelope] = useState(`// debug disable <- remove this line
+hello() {
   console.log("Hello world")
   return true
 }
@@ -34,19 +35,18 @@ if (err != nil) {
           Envelope code:
         </code>
         <textarea
-          className="list-inside list-decimal text-sm text-center sm:text-left bg-background text-[#186818] dark:text-[#6c6] font-[family-name:var(--font-geist-mono)]"
+          className="list-inside list-decimal text-sm text-left bg-background text-[#186818] dark:text-[#6c6] font-[family-name:var(--font-geist-mono)]"
           name="envelope" id="envelope" cols={80} rows={10}
           value={envelope}
           onChange={(e) => {
             setEnvelope(e.target.value);
             setJs(compile(e.target.value));
           }}></textarea>
-
         <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
           Compiled javascript
         </code>
         <textarea
-          className="list-inside list-decimal text-sm text-center sm:text-left bg-background  text-[#186818] dark:text-[#6c6] font-[family-name:var(--font-geist-mono)]"
+          className="list-inside list-decimal text-sm text-left bg-background  text-[#186818] dark:text-[#6c6] font-[family-name:var(--font-geist-mono)]"
           name="envelope" id="envelope" cols={80} rows={12} value={js} readOnly={true}></textarea>
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
